@@ -26,7 +26,7 @@ entrada=input()
 inicio=datetime.now()
 horaInicial= inicio.strftime("%H")
 minInicial= inicio.strftime("%M")
-print (f"entrada, {horaInicial}hrs{minInicial}min")
+print (f"entrada, {horaInicial}hrs{minInicial}m")
 entradaH = horaInicial
 entradaM = minInicial
 
@@ -46,4 +46,9 @@ minRegistro= (int(saidaM) - int(entradaM))
 
 print ("Total de horas trabalhadas:")
 print (f"{horaRegistro}hrs{minRegistro}m")
+
+if minRegistro > 2:
+    print('trabalho feito')
+else:
+    print('carga horaria incompleta') 
  
